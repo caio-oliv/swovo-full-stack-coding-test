@@ -1,4 +1,4 @@
-# Flatirons Full-Stack Developer Coding Test
+# Flatirons/Swovo Full-Stack Developer Coding Test
 
 Be sure to read **all** of this document carefully, and follow the guidelines within.
 
