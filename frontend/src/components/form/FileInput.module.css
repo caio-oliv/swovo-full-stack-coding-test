@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: calc(var(--spacing) * 2);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  gap: calc(var(--spacing) * 2);
+}
+
+.drop_zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: fit-content;
+  height: 100%;
+  padding: calc(var(--spacing) * 2);
+  border: 2px dashed var(--color-gray-200);
+  border-radius: var(--radius-md);
+  
+  font-size: var(--text-xl);
+  color: var(--color-gray-400);
+  cursor: pointer;
+}
+
+.file_input {
+	display: none;
+}

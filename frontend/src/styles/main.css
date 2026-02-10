@@ -1,0 +1,98 @@
+@layer reset, base, default, module, util, component, override;
+
+@import 'normalize.css' layer(reset);
+@import 'tailwindcss';
+
+@layer reset {
+	fieldset,
+	ul,
+	ol,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	pre,
+	button {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	input[type="range"] {
+		appearance: none;
+		-webkit-appearance: none;
+		background: transparent;
+		cursor: pointer;
+	}
+
+	button {
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	ul,
+	ol {
+		list-style: disc inside;
+	}
+}
+
+@layer default {
+	* {
+		box-sizing: border-box;
+	}
+
+	::marker {
+		margin-right: calc(var(--spacing) * 2);
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	hr {
+		margin: 0;
+		border: 0 solid var(--color-gray-500);
+		border-bottom-width: thin;
+		border-right-width: thin;
+		align-self: stretch;
+		height: auto;
+		flex-shrink: 0;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	button {
+		cursor: pointer;
+	}
+
+	svg {
+		width: 1em;
+		height: 1em;
+		font-size: inherit;
+	}
+
+	:root {
+		font-family: var(--font-sans);
+		font-size: var(--text-base);
+	}
+
+	body {
+		margin: 0;
+		width: 100%;
+  	height: 100%;
+		position: relative;
+	}
+
+	#root {
+		isolation: isolate;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}

@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+
+	max-width: var(--container-sm);
+	width: 100%;
+	gap: calc(var(--spacing) * 2);
+}
+
+.strategy_container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+
+	width: 100%;
+	gap: calc(var(--spacing) * 2);
+}
+
+.submit_button {
+	width: 100%;
+}
+
+.file_input {
+	width: 100%;
+}
+
+.error_list {
+	width: 100%;
+}

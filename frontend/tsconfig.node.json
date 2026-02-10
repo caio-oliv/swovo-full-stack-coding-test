@@ -1,0 +1,23 @@
+{
+	"extends": ["./rules.tsconfig.json"],
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+		"types": ["node"],
+
+		"rootDir": "./",
+		"outDir": "dist",
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["./*"],
+			"@test/*": ["./../test/*"]
+		},
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"moduleDetection": "force",
+		"noEmit": true
+	},
+	"include": ["vite.config.ts", "eslint.config.ts"]
+}

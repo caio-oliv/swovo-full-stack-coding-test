@@ -1,0 +1,15 @@
+server {
+	listen ${PORT};
+
+	location /api/ {
+		proxy_pass ${MAIN_SERVER_ADDRESS};
+	}
+
+	location /api/import/ {
+		proxy_pass ${IMPORT_SERVER_ADDRESS};
+	}
+	
+	location / {
+		proxy_pass ${FRONTEND_ADDRESS};
+	}
+}

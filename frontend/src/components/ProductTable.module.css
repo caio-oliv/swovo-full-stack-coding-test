@@ -1,0 +1,49 @@
+.container {
+	table-layout: auto;
+	width: 1450px;
+	background-color: var(--color-white);
+	font-size: var(--text-sm);
+}
+
+.head_container {
+	background-color: var(--color-gray-100);
+}
+
+.container th {
+	text-align: left;
+	font-weight: 600;
+	padding: calc(var(--spacing) * 3);
+	border-bottom: 2px solid var(--color-gray-200);
+	white-space: nowrap;
+}
+
+/* Body */
+.body_container td {
+	padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+	border-bottom: 1px solid var(--color-gray-200);
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.name_cell {
+	max-width: var(--container-md);
+	overflow: hidden;
+	overflow-wrap: anywhere;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.body_container tr:nth-child(even) {
+	background-color: var(--color-gray-50);
+}
+
+.body_container tr:hover {
+	background-color: var(--color-gray-200);
+}
+
+/* Numeric alignment for prices */
+.container td:nth-last-child(-n + 5),
+.container th:nth-last-child(-n + 5) {
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+}

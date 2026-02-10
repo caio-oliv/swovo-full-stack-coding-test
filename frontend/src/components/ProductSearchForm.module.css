@@ -1,0 +1,57 @@
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+
+	max-width: 680px;
+	width: 100%;
+	gap: 8px;
+}
+
+.name_field {
+	max-width: 100%;
+	width: 100%;
+}
+
+.range_container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	gap: 8px;
+}
+
+.range_field {
+	max-width: 100%;
+	width: 100%;
+}
+
+.order_container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 8px;
+}
+
+.button_container {
+	display: flex;
+	flex: 1 1;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 8px;
+}
+
+.submit_button {
+	max-width: 100%;
+	width: 100%;
+}
+
+.error_container {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--color-red-800);
+}

@@ -1,0 +1,66 @@
+{
+	"compilerOptions": {
+		"incremental": false,
+		"target": "es2024",
+		"lib": ["es2024"],
+		"module": "esnext",
+		"moduleResolution": "node",
+
+		"rootDir": "./",
+		"outDir": "build",
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["./*"],
+			"@test/*": ["./../test/*"],
+			"@project/*": ["./../*"]
+		},
+
+		"allowJs": true,
+		"checkJs": true,
+		"declaration": false,
+		"declarationMap": false,
+		"removeComments": true,
+		"stripInternal": true,
+		"isolatedModules": false,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+
+		"strict": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"alwaysStrict": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"noImplicitOverride": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"noStrictGenericChecks": false,
+		"allowUnreachableCode": false,
+		"allowSyntheticDefaultImports": true,
+		"preserveConstEnums": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"useUnknownInCatchVariables": true,
+		"exactOptionalPropertyTypes": false,
+		"forceConsistentCasingInFileNames": true,
+		"downlevelIteration": false
+	},
+	"include": [
+		"src/**/*",
+		"test/**/*",
+		"migrations/**/*",
+		"seeds/**/*",
+		"rollup.config.ts",
+		"eslint.config.ts",
+		"vitest.config.ts",
+		"knexfile.ts"
+	],
+	"exclude": ["node_modules/**", "build/**", "coverage/**"]
+}

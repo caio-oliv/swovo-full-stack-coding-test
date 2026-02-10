@@ -1,0 +1,10 @@
+.screen {
+	display: flex;
+	flex-flow: column nowrap;
+	max-width: var(--breakpoint-xl);
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	padding: calc(var(--spacing) * 4);
+	padding-top: 0;
+}
